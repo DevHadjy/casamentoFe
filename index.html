@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presente de Casamento</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="golden">
+  <main class="wedding-page">
+    <div class="hearts-background" aria-hidden="true">
+      <span class="heart heart-one"></span>
+      <span class="heart heart-two"></span>
+      <span class="heart heart-three"></span>
+      <span class="heart heart-four"></span>
+      <span class="heart heart-five"></span>
+      <span class="heart heart-six"></span>
+    </div>
+
+    <div class="gold-corner gold-corner-top-left" aria-hidden="true"></div>
+    <div class="gold-corner gold-corner-top-right" aria-hidden="true"></div>
+    <div class="gold-corner gold-corner-bottom-left" aria-hidden="true"></div>
+    <div class="gold-corner gold-corner-bottom-right" aria-hidden="true"></div>
+
+    <section class="intro-screen" id="introScreen" aria-labelledby="introTitle">
+      <label class="theme-control" for="themeSelect">
+        <span>Tema</span>
+        <select id="themeSelect" aria-label="Tema">
+          <option value="golden" selected>Dourado</option>
+          <option value="antique">Antigo</option>
+        </select>
+      </label>
+
+      <div class="envelope-scene" id="envelopeScene" aria-hidden="true">
+        <div class="sparkle sparkle-one"></div>
+        <div class="sparkle sparkle-two"></div>
+        <div class="sparkle sparkle-three"></div>
+
+        <div class="envelope">
+          <div class="envelope-back"></div>
+          <div class="letter">
+            <span>Com amor</span>
+          </div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="wax-seal"></div>
+        </div>
+      </div>
+
+      <p class="intro-kicker" id="introTitle">Um carinho especial</p>
+      <button class="gift-button" id="giftButton" type="button">
+        Abrir presente
+      </button>
+    </section>
+
+    <section class="celebration-screen" id="celebrationScreen" aria-hidden="true" hidden>
+      <div class="celebration-effects" aria-hidden="true">
+        <span class="celebration-heart celebration-heart-one"></span>
+        <span class="celebration-heart celebration-heart-two"></span>
+        <span class="celebration-heart celebration-heart-three"></span>
+        <span class="celebration-star celebration-star-one"></span>
+        <span class="celebration-star celebration-star-two"></span>
+        <span class="celebration-star celebration-star-three"></span>
+        <span class="celebration-star celebration-star-four"></span>
+      </div>
+      <p>Feliz Vida a Dois!</p>
+    </section>
+
+    <section class="gift-screen" id="giftScreen" aria-hidden="true" hidden>
+      <button
+        class="present-button"
+        id="presentButton"
+        type="button"
+        aria-expanded="false"
+        aria-controls="presentReveal"
+      >
+        <span class="present-sparkle present-sparkle-one" aria-hidden="true"></span>
+        <span class="present-sparkle present-sparkle-two" aria-hidden="true"></span>
+        <span class="present-sparkle present-sparkle-three" aria-hidden="true"></span>
+        <span class="present-lid" aria-hidden="true">
+          <span class="present-bow present-bow-left"></span>
+          <span class="present-bow present-bow-right"></span>
+          <span class="present-bow-knot"></span>
+        </span>
+        <span class="present-box" aria-hidden="true"></span>
+        <span class="present-text">Abrir presente</span>
+      </button>
+
+      <div class="present-reveal" id="presentReveal" hidden>
+        <div class="photo-frame">
+          <div class="frame-glow" aria-hidden="true"></div>
+          <img
+            src="./WhatsApp%20Image%202026-05-21%20at%2003.05.27.jpeg"
+            alt="Foto do casal"
+            class="couple-photo"
+          >
+        </div>
+        <p class="gift-caption">Que este amor brilhe todos os dias.</p>
+        <div class="surprise-message" id="surpriseMessage">
+          <div class="celebration-effects surprise-effects" aria-hidden="true">
+            <span class="celebration-heart celebration-heart-one"></span>
+            <span class="celebration-heart celebration-heart-two"></span>
+            <span class="celebration-heart celebration-heart-three"></span>
+            <span class="celebration-star celebration-star-one"></span>
+            <span class="celebration-star celebration-star-two"></span>
+            <span class="celebration-star celebration-star-three"></span>
+            <span class="celebration-star celebration-star-four"></span>
+          </div>
+          <p>
+            Que a felicidade acompanhe cada passo desta nova vida a dois.
+            Que o amor seja abrigo, alegria e promessa renovada todos os dias.
+          </p>
+          <strong>Hadjy</strong>
+        </div>
+      </div>
+      <button class="back-button" id="backButton" type="button">
+        Voltar
+      </button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
